@@ -1,0 +1,11 @@
+.card__image {
+  filter: grayscale(1);
+  transition: grayscale 0.3s ease-in-out;
+  max-width: 60px;
+  margin: 0 5px 10px 0;
+
+  &.active {
+    filter: grayscale(0);
+    transition: grayscale 0.3s ease-in-out;
+  }
+}
