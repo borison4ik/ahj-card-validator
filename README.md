@@ -1,3 +1,3 @@
 # testing
 
-## ahj-card-validator
+## ahj-testing-card-validator
