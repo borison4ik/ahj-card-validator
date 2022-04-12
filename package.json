@@ -9,9 +9,8 @@
     "dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint .",
-    "test": "jest",
-    "e2e-serv": "webpack serve --config webpack.e2e.js",
-    "e2e": "jest --detectOpenHandles --testPathPattern=./src/js/e2e --runInBand",
+    "test": "jest --testPathPattern=./src/js/__tests__ --runInBand",
+    "e2e": "jest --testPathPattern=./src/js/e2e --runInBand",
     "coverage": "jest --coverage",
     "doc": "jsdoc -c jsdoc.conf.json",
     "preshow:coverage": "npm run coverage",
@@ -50,6 +49,10 @@
   "dependencies": {
     "bootstrap": "^5.1.3",
     "file-loader": "^6.2.0",
-    "puppeteer": "^13.5.2"
+    "puppeteer": "^13.5.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1",
+    "webpack-merge": "^5.7.3"
   }
 }
